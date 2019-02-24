@@ -1,0 +1,31 @@
+{
+  "name": "gamerlife",
+  "version": "1.0.0",
+  "description": "A starting app that grants you exp based on your habits",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenv nodemon index.js",
+    "prod": "dotenv node src/index.js",
+    "dev": "concurrently --kill-others \"npm start\" \"cd ../front && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gamerlife",
+    "gamer",
+    "PWAExample",
+    "clok"
+  ],
+  "author": "Chion Valentin",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv-cli": "^1.4.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.15",
+    "nodemon": "^1.18.10",
+    "serve-static": "^1.13.2"
+  }
+}
