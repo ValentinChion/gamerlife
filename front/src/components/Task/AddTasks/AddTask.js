@@ -19,7 +19,7 @@ export default class AddTask extends Component {
 
     addTask = () => {
         const {change} = this.state;
-        axios.post(endPoint + "player/5c71c5574db4956dae968ebf/tasks",change).then(this.props.getPlayer)
+        axios.post(endPoint + "player/5c72ca0320589f520275ed4f/tasks",change).then(this.props.getPlayer)
     };
 
     render() {

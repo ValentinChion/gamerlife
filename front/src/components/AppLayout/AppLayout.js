@@ -17,7 +17,7 @@ export default class AppLayout extends Component {
     }
 
     getPlayer = async () => {
-        const player = await axios.get(endPoint + "player/5c71c5574db4956dae968ebf/tasks");
+        const player = await axios.get(endPoint + "player/5c72ca0320589f520275ed4f/tasks");
         const playerInfo = {
             nickname: player.data.nickname,
             level: player.data.level,
